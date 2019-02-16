@@ -1,0 +1,25 @@
+body {
+	background-color: black;
+}
+td {
+	height: 30px;
+	width: 110px;
+	border-color: black;
+}
+
+input {
+	width: 300px;
+}
+
+.command {
+	width: 30px;
+	height: 10px;
+}
+
+.historic {
+	border-color: darkgrey;
+	border-style: solid;
+	border-width: 1px;
+	background-color: white;
+	width: 300px;	
+}

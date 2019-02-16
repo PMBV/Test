@@ -1,0 +1,343 @@
+<!doctype HTML>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<hr>
+		<table>
+			<tr>
+				<td id = "big1">
+					
+
+				</td>
+
+				<td id = "big2">
+				
+					<table id = "yellow">
+	
+							<tr>
+	
+								<td id = "yellow6">6</td>
+								<td id = "yellow7">7</td>
+								<td id = "yellow8">8</td>
+	
+							</tr>
+	
+							<tr>
+	
+								<td id = "yellow3">3</td>
+								<td id = "yellow4">4</td>
+								<td id = "yellow5">5</td>
+	
+							</tr>
+	
+							<tr>
+	
+
+
+								<td id = "yellow0">0</td>
+								<td id = "yellow1">1</td>
+								<td id = "yellow2">2</td>
+	
+							</tr>
+	
+					</table>
+
+				</td>
+
+				<td id = "big3"></td>
+
+			</tr>
+			<tr>
+
+				<td id = "big4"></td>
+
+				<td id = "big5">
+
+					<table id = "red">
+
+							<tr>
+
+								<td id = "red6"></td>
+								<td id = "red7"></td>
+								<td id = "red8"></td>
+
+							</tr>
+
+							<tr>
+
+								<td id = "red3"></td>
+								<td id = "red4"></td>
+								<td id = "red5"></td>
+
+							</tr>
+
+							<tr>
+
+
+								<td id = "red0"></td>
+								<td id = "red1"></td>
+								<td id = "red2"></td>
+
+
+							</tr>
+
+					</table>
+
+				</td>
+
+				<td id = "big6"></td>
+
+			</tr>
+			<tr>
+
+				<td id = "big7">
+					
+					<table id = "blue">
+
+							<tr>
+
+								<td id = "blue6"></td>
+								<td id = "blue7"></td>
+								<td id = "blue8"></td>
+
+							</tr>
+
+							<tr>
+
+								<td id = "blue3"></td>
+								<td id = "blue4"></td>
+								<td id = "blue5"></td>
+
+							</tr>
+
+							<tr>
+
+								<td id = "blue0"></td>
+								<td id = "blue1"></td>	
+								<td id = "blue2"></td>
+
+							</tr>
+
+					</table>
+
+				</td>
+				
+				<td id = "big8">
+
+					<table id = "white">
+
+							<tr>
+
+								<td id = "white6"></td>
+								<td id = "white7"></td>
+								<td id = "white8"></td>
+
+
+							</tr>
+
+							<tr>
+
+								<td id = "white3"></td>
+								<td id = "white4"></td>
+								<td id = "white5"></td>
+
+							</tr>
+
+							<tr>
+
+								<td id = "white0"></td>
+								<td id = "white1"></td>
+								<td id = "white2"></td>
+
+							</tr>
+
+					</table>
+
+				</td>
+				
+				<td id = "big9">
+					
+					<table id = "GREEN">
+
+							<tr>
+
+								<td id = "green6"></td>
+								<td id = "green7"></td>
+								<td id = "green8"></td>
+
+							</tr>
+
+							<tr>
+
+								<td id = "green3"></td>
+								<td id = "green4"></td>
+								<td id = "green5"></td>
+
+							</tr>
+
+							<tr>
+
+								<td id = "green0"></td>
+								<td id = "green1"></td>
+								<td id = "green2"></td>
+
+							</tr>
+
+					</table>
+
+				</td>
+
+			</tr>
+			<tr>
+				
+				<td id = "big10"></td>
+				
+				<td id = "big11">
+					
+					<table id = "orange">
+
+							<tr>
+
+								<td id = "orange6"></td>
+								<td id = "orange7"></td>
+								<td id = "orange8"></td>
+
+							</tr>
+
+							<tr>
+
+								<td id = "orange3"></td>
+								<td id = "orange4"></td>
+								<td id = "orange5"></td>
+
+							</tr>
+
+							<tr>
+
+
+
+								<td id = "orange0"></td>
+								<td id = "orange1"></td>
+								<td id = "orange2"></td>
+
+							</tr>
+
+					</table>
+
+				</td>
+				
+				<td id = "big12"></td>
+			</tr>
+		</table>
+
+		<hr>
+		<TABLE>
+			<tr>
+				<td class="command"><button onclick="RRotate()">R</button></td>
+				<td class="command"><button onclick="RpRotate()">R'</button></td>
+				<td class="command"><button onclick="R2Rotate()">R2</button></td>
+				
+				<td class="command"><input id="moveLine" value="moveLine"><button onclick="moveTraducer(document.getElementById('moveLine').value)">-></button><button onclick="scrambler()">scramble</button><button onclick="clearHistoric()" id="clearButton">[0][X]</button>
+</td>
+			</tr>
+			<tr>
+				<td class="command"><button onclick="LRotate()">L</button></td>
+				<td class="command"><button onclick="LpRotate()">L'</button></td>
+				<td class="command"><button onclick="L2Rotate()">L2</button></td>
+
+				<td><button onclick="whiteCross()">whiteCross</button><button onclick="firstLayer()">firstLayer</button><button onclick="secondLayer()">secondLayer</button>
+			</tr>
+			<tr>
+				<td class="command"><button onclick="URotate()">U</button></td>
+				<td class="command"><button onclick="UpRotate()">U'</button></td>
+				<td class="command"><button onclick="U2Rotate()">U2</button></td>
+
+				<td rowspan = 4 class="historic" id="historic"></td>
+			</tr>
+			<tr>
+				<td class="command"><button onclick="FRotate()">F</button></td>
+				<td class="command"><button onclick="FpRotate()">F'</button></td>
+				<td class="command"><button onclick="F2Rotate()">F2</button></td>
+
+			</tr>
+			<tr>
+				<td class="command"><button onclick="DRotate()">D</button></td>
+				<td class="command"><button onclick="DpRotate()">D'</button></td>
+				<td class="command"><button onclick="D2Rotate()">D2</button></td>
+
+			</tr>
+			<tr>
+				<td class="command"><button onclick="BRotate()">B</button></td>
+				<td class="command"><button onclick="BpRotate()">B'</button></td>
+				<td class="command"><button onclick="B2Rotate()">B2</button></td>
+
+			</tr>
+
+
+		</TABLE>
+		
+
+
+		<script src="js/def.js"></script>
+		<script src="js/table.js"></script>
+		<script src="js/actuColor.js"></script>
+
+		<script src="js/rotation/RRotate.js"></script>
+		<script src="js/rotation/RpRotate.js"></script>
+		<script src="js/rotation/R2Rotate.js"></script>
+
+		<script src="js/rotation/LRotate.js"></script>
+		<script src="js/rotation/LpRotate.js"></script>
+		<script src="js/rotation/L2Rotate.js"></script>
+
+		<script src="js/rotation/URotate.js"></script>
+		<script src="js/rotation/UpRotate.js"></script>
+		<script src="js/rotation/U2Rotate.js"></script>
+
+		<script src="js/rotation/FRotate.js"></script>
+		<script src="js/rotation/FpRotate.js"></script>
+		<script src="js/rotation/F2Rotate.js"></script>
+		
+		<script src="js/rotation/DRotate.js"></script>
+		<script src="js/rotation/DpRotate.js"></script>
+		<script src="js/rotation/D2Rotate.js"></script>
+
+		<script src="js/rotation/BRotate.js"></script>
+		<script src="js/rotation/BpRotate.js"></script>
+		<script src="js/rotation/B2Rotate.js"></script>
+
+		<script src="js/moveTraducer.js"></script>
+		<script src="js/scrambler.js"></script>
+
+		<script src="js/whiteCross/whiteCross.js"></script>
+		<script src="js/whiteCross/uppedUppingPlacing.js"></script>
+		<script src="js/whiteCross/midDeplace.js"></script>
+		<script src="js/whiteCross/downPlacing.js"></script>
+		<script src="js/whiteCross/turnBadUpPlace.js"></script>
+		<script src="js/whiteCross/forcingFinalIntervert.js"></script>
+		<script src="js/whiteCross/forcingFinalReturn.js"></script>
+
+		<script src="js/firstLayer/firstLayer.js"></script>
+		<script src="js/firstLayer/lefter.js"></script>
+		<script src="js/firstLayer/righter.js"></script>
+		<script src="js/firstLayer/upper.js"></script>
+		<script src="js/firstLayer/ejectToReplace.js"></script>
+
+		<script src="js/secondLayer/secondLayer.js"></script>
+		<script src="js/secondLayer/placer.js"></script>
+		<script src="js/secondLayer/unlocker.js"></script>
+
+
+		<script src="js/clearHistoric.js"></script>
+
+
+		<script> //disposeTables()
+				actuColor()
+
+	</script>
+		
+	</body>
+</html>
